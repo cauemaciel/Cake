@@ -1,3 +1,40 @@
+############################
+#                          #
+#                  ## /    #
+#                #   #     #
+#    @@@@@@@@@@@@@####     #
+#    @ \@ | | | | | |#     #
+#    @___\@ | | | | |#     #
+#    @ ____\@_|_|_|_|#     #
+#    @@@@@@@@@@@@@@@@#     #
+#                          #
+############################
+
+########################
+# Cauê - Cake Chalenge
+########################
+
+
+
+########################
+# Config Backend
+########################
+
+terraform {
+  backend "s3" {
+    bucket         = "tf-remote-state20221020192054854800000002"
+    key            = "staging/terraform.tfstate"
+    region         = "us-east-1"
+    encrypt        = true
+    kms_key_id     = "b55f8918-b04d-4296-9d87-f501cefa9837"
+    dynamodb_table = "tf-remote-state-lock"
+  }
+}
+
+########################
+# Config Providers
+########################
+
 terraform {
   required_providers {
     aws = {
@@ -25,7 +62,7 @@ resource "aws_kms_key" "kms_s3_key" {
 }
 
 resource "aws_kms_alias" "kms_s3_key_alias" {
-    name          = "alias/s3-key"
+    name          = "alias/s3-key-test"
     target_key_id = aws_kms_key.kms_s3_key.key_id
 }
 

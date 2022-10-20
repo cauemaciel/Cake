@@ -5,9 +5,9 @@ variable "aws_region" {
 }
 
 variable "bucket_name" {
-  description = "S3 bucket Cake Devops"
+  description = "S3 bucket name"
   type        = string
-  default     = "Cake-Devops-is-Great"
+  default     = "cake-devops-great"
 
   validation {
     condition = length(var.bucket_name) > 2 && length(var.bucket_name) < 64 && can(regex("^[0-9A-Za-z-]+$", var.bucket_name))
