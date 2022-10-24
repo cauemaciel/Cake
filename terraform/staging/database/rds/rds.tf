@@ -45,6 +45,6 @@ resource "aws_db_instance" "cake" {
   skip_final_snapshot  = true
 #  disable auto minor version
   auto_minor_version_upgrade  = false
-  
+#  environment = "Staging"   
 
 }
