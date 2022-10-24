@@ -1,5 +1,5 @@
-# Cake
-Terraform Cake Environment
+# Cake Terraform 
+Create Environment with Terraform to Cake Test
 
 # terraform-aws-rds-postgres-cake
 
@@ -8,7 +8,7 @@ Terraform Cake Environment
 
 ## Description
 
-Terraform module which creates an AWS RDS Postgres.
+Terraform module which creates an AWS RDS Postgres and Bucket S3 AWS for a Cake test Environment.
 
 
 ## Prerequisites
@@ -16,6 +16,15 @@ Terraform module which creates an AWS RDS Postgres.
 Requirements
 ------------
 
+### S3 AWS for App
+- Create bucket s3 environement APP Cake
+- Remove Public Access 
+
+### S3 AWS for tf.state
+- Create bucket s3 environement tf.state
+- Remove Public Access 
+
+### RDS Postgres AWS
 - An existing VPC "Default"
 - An existing Minor Update = false
 - An existing Postgres parameter group
