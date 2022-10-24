@@ -1,5 +1,5 @@
 # Cake Terraform 
-Create Environment with Terraform to Cake Test
+Create Environment with Terraform for Cake Test
 
 # terraform-aws-rds-postgres-cake
 
