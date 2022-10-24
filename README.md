@@ -28,3 +28,11 @@ Password for Master DB
 - The module will generate a random 16 characters long password.
 - The module will output this password.
 - Make sure that you change the password after the provisioning is successfully completed.
+
+Environment
+------------
+
+I was created my envinronment with two buckets.
+
+- `1 - Store terraform state and version the code.`
+- `2 - Use by some application for Cake Company.`
