@@ -4,7 +4,6 @@ Terraform Cake Environment
 # terraform-aws-rds-postgres-cake
 
 [![Terraform Version](https://img.shields.io/badge/Terraform%20Version->=0.13.0,_<0.14.0-blue.svg)](https://releases.hashicorp.com/terraform/)
-[![Release](https://img.shields.io/github/release/traveloka/terraform-aws-rds-postgres.svg)](https://github.com/traveloka/terraform-aws-rds-postgres/releases)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)
 
 ## Description
